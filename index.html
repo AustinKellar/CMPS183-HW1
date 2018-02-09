@@ -24,26 +24,43 @@
 			</ol>
 		</div>
 		<div class="main-body">
-			<div class="col-sm-4">
-				<br>
-				<img src="images/spidey.png" class="profile-pic" style="background-color: #8b9ef4;">
-			</div>
-			<div class="col=sm-8 charcoal">
-				<h1 class="underlined marker">Peter Parker</h1>
-				<ul>
-					<li>Place of Birth: Forest Hills, New York</li>
-					<li>Date of Birth: 1962</li>
-					<li>Email: definitelynotspiderman@gmail.com</li>
-					<li>Phone: 867-5309</li>
-				</ul>
-				<br>
-				<div class="container-fluid">
-					<br>
-					<h3 class="underlined marker" style="padding-left: 300px;">About Me</h3>
-					<p style="padding-right:100px; padding-left:50px; text-indent: 30px">
+			<div class="row">
+				<div class="col-sm-4 general-info">
+					<h1 class="underlined marker text-center">General Info</h1>
+					<ul>
+						<li>Name: Peter Parker</li>
+						<li>Place of Birth: Forest Hills, New York</li>
+						<li>Date of Birth: 1962</li>
+						<li>Email: definitelynotspiderman@gmail.com</li>
+						<li>Phone: 867-5309</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<img src="images/spidey.png" class="profile-pic">
+				</div>
+				<div class="col-sm-4 about-me">
+					<h3 class="underlined marker text-center">About Me</h3>
+					<p>
 						Hi, my name is Peter Parker. I am 15 years old and I attend Midtown High School in New York City. I live with my Aunt May, but my Uncle passed away recently. I really seem to have a knack for science in school. I even build cool gadgets in my free time! One intersting fact about me is that I am good friends with Spider-Man, but I am definitely not Spider-Man.
 					</p>
-				</div>	
+				</div>
+			</div>
+			<div class="row coursework">
+				<h1 class="text-center">Coursework</h1>
+				<table class="course" style="margin: 0px auto;"> 
+					<tr>
+						<th>Course Number</th>
+						<th>Course Title</th>
+						<th>Department</th>
+						<th>Quarter</th>
+					</tr>
+					<tr ng-repeat="course in courses">
+						<td ng-bind="course.number"></td>
+						<td ng-bind="course.title"></td>
+						<td ng-bind="course.dept"></td>
+						<td ng-bind="course.quarter"></td>
+					</tr>
+				</table>
 			</div>
 		</div>
 		<div class="footer container-fluid">

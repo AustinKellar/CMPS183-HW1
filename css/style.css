@@ -74,11 +74,27 @@
     border-right: 2px solid black;
 }
 
+.general-info {
+    float: left;
+}
+
+.coursework {
+    text-align: center;
+}
+
+.about-me {
+   float: right;
+   padding-right: 50px;
+}
+
 .profile-pic {
-	width: 70%;
-	height: 70%;
-	border: solid;
-	position: relative;
+	width: 80%;
+	height: 80%;
+    border: solid;
+    background-color: #8b9ef4;
+    float: center;
+    margin: auto;
+    display: block;
 }
 
 .underlined {
@@ -115,13 +131,41 @@
 	background-color: #ef4345;
 }
 
-table {
+.course table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin: auto;
+    display: block;
+    width: 70%;
+}
+
+.course th {
+	font-family: "Marker Felt";
+    background-color: #0d4ebc;
+    border: 1px solid #a30119;
+    text-align: left;
+    padding: 8px;
+    font-size: 12px;
+    color: lightgray;
+}
+
+.course td {
+    border: 1px solid #a30119;
+    text-align: left;
+    padding: 8px;
+    font-size: 12px;
+    background-color: #8aa4f2;
+    color: #434344;;
+}
+
+
+.todo table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-th {
+.todo th {
 	font-family: "Marker Felt";
     background-color: #0d4ebc;
     border: 1px solid #a30119;
@@ -130,7 +174,7 @@ th {
     color: lightgray;
 }
 
-td {
+.todo td {
     border: 1px solid #a30119;
     text-align: left;
     padding: 8px;
@@ -138,9 +182,6 @@ td {
     color: #434344;;
 }
 
-tr:nth-child(even) {
-  
-}
 
 label {
 	font-family: "Marker Felt";
