@@ -79,7 +79,8 @@
 }
 
 .coursework {
-    text-align: center;
+    position: relative;
+    bottom: 30px;
 }
 
 .about-me {
@@ -136,24 +137,25 @@
     border-collapse: collapse;
     margin: auto;
     display: block;
-    width: 70%;
 }
 
 .course th {
 	font-family: "Marker Felt";
     background-color: #0d4ebc;
     border: 1px solid #a30119;
-    text-align: left;
+    text-align: center;
     padding: 8px;
-    font-size: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
     color: lightgray;
 }
 
 .course td {
     border: 1px solid #a30119;
     text-align: left;
-    padding: 8px;
     font-size: 12px;
+    padding: 8px;
     background-color: #8aa4f2;
     color: #434344;;
 }
